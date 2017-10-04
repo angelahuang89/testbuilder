@@ -138,8 +138,6 @@ describe('MasterCard', function() {
 });
 
 describe('Discover', function() {
-  // Tests without a function will be marked as "pending" and not run
-  // Implement these tests (and others) and make them pass!
   var expect = chai.expect;
   for (var prefix = 644; prefix <= 649; prefix++) {
     (function(prefix) {
@@ -166,7 +164,6 @@ describe('Discover', function() {
 });
 
 describe('Maestro', function() {
-  // Write full test coverage for the Maestro card
   var expect = chai.expect;
   for (var cardLength = 12; cardLength <= 19; cardLength++) {
     (function(cardLength) {
@@ -185,9 +182,6 @@ describe('Maestro', function() {
     })(cardLength)
   }
 });
-
-// describe('should support China UnionPay')
-// describe('should support Switch')
 
 describe('China UnionPay', function() {
   var expect = chai.expect;

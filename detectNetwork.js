@@ -13,7 +13,7 @@ var detectNetwork = function(cardNumber) {
   // The American Express network always starts with a 34 or 37 and is 15 digits long
 
   // Once you've read this, go ahead and try to implement this function, then return to the console.
-  //var number = parseInt(cardNumber, 10);
+  
   var prefixTwo = parseInt(cardNumber.slice (0, 2), 10);
   var prefixOne = parseInt(cardNumber.slice (0, 1), 10);
   var prefixThree = parseInt(cardNumber.slice (0, 3), 10);
